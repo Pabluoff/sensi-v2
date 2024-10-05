@@ -154,7 +154,7 @@ h3 {
     -webkit-box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
     -moz-box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
     box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
-                            
+
 }
 
 .button:before {
@@ -176,6 +176,7 @@ h3 {
     from {
         outline: 0px solid #39baf1;
     }
+
     to {
         outline: 11px solid #f94ff600;
     }
@@ -317,6 +318,56 @@ h3 {
     font-family: 'Mystique', Courier, monospace;
 }
 
+.testimonials {
+    padding: 4rem 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -63px;
+}
+
+.testimonials__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonials__header h3 {
+    font-size: 3.1em;
+    font-weight: bold;
+    margin-right: 1rem;
+
+}
+
+.testimonials__image {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 767.98px) {
+    .testimonials__header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials__header h3 {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        font-size: 2.7em
+    }
+
+    .testimonials__image {
+        width: 120px;
+        margin-top: 0;
+    }
+
+}
+
+
 /* Price */
 .pricing {
     background-color: #000000;
@@ -324,16 +375,16 @@ h3 {
     text-align: center;
     font-size: 1.6em;
     margin-top: -30px;
-  }
-  
-  .pricing-container {
+}
+
+.pricing-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-  }
-  
-  .pricing-card {
+}
+
+.pricing-card {
     background: none;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -344,48 +395,48 @@ h3 {
     color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;
     border: #2C8FEB 1px solid;
-  }
-  
-  .pricing-card:hover {
+}
+
+.pricing-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 30px #00000033;
-  }
-  
-  .pricing-card h3 {
+}
+
+.pricing-card h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
-  }
-  
-  .pricing-card .price {
+}
+
+.pricing-card .price {
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 20px;
-  }
-  
-  .pricing-card .price span {
+}
+
+.pricing-card .price span {
     font-size: 0.5em;
-  }
-  
-  .pricing-card ul {
+}
+
+.pricing-card ul {
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
-  }
-  
-  .pricing-card ul li {
+}
+
+.pricing-card ul li {
     font-size: 1em;
     margin-bottom: 10px;
     color: #cccccc;
     display: flex;
     align-items: center;
-  }
-  
-  .pricing-card ul li ion-icon {
+}
+
+.pricing-card ul li ion-icon {
     margin-right: 10px;
     font-size: 1.2em;
-  }
-  
-  .pricing-card .btn {
+}
+
+.pricing-card .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -397,27 +448,27 @@ h3 {
     text-decoration: none;
     font-size: 1em;
     transition: background-color 0.3s, border-color 0.3s;
-  }
-  
-  .pricing-card .btn:hover {
+}
+
+.pricing-card .btn:hover {
     background-color: #2881d5;
-  }
-  
-  .pricing-card .btn ion-icon {
+}
+
+.pricing-card .btn ion-icon {
     margin-left: 8px;
     font-size: 1.2em;
-  }
-  
-  /* Advanced Card Styles */
-  .pricing-card.advanced {
+}
+
+/* Advanced Card Styles */
+.pricing-card.advanced {
     position: relative;
     background: #0f0f12;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: none;
-  }
-  
-  .advanced .ribbon {
+}
+
+.advanced .ribbon {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -427,9 +478,9 @@ h3 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
-  
-  .advanced .ribbon::before {
+}
+
+.advanced .ribbon::before {
     content: 'Recomendado';
     position: absolute;
     width: 150%;
@@ -444,9 +495,9 @@ h3 {
     color: #fff;
     letter-spacing: 0.1em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .advanced .ribbon::after {
+}
+
+.advanced .ribbon::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -456,15 +507,15 @@ h3 {
     background: #004f84;
     z-index: -1;
     box-shadow: -140px -140px #005a84;
-  }
-  
-  .pricing-card.advanced h3,
-  .pricing-card.advanced .price,
-  .pricing-card.advanced ul li {
+}
+
+.pricing-card.advanced h3,
+.pricing-card.advanced .price,
+.pricing-card.advanced ul li {
     color: #ffffff;
-  }
-  
-  .btn-additional-info {
+}
+
+.btn-additional-info {
     margin-top: 20px;
     z-index: 10;
     font-size: 0.7em;
@@ -473,18 +524,17 @@ h3 {
     align-items: center;
     display: flex;
     color: #efeff2;
-  }
-  
-  .btn-additional-info ion-icon {
+}
+
+.btn-additional-info ion-icon {
     margin-right: 5px;
     font-size: 1.2em;
     flex-shrink: 0;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .pricing-container {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  }
-  
+}
