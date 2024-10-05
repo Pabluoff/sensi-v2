@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pabluoff | Métodos e Sensi</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/cd363fe7f3.js" crossorigin="anonymous"></script>
+    <title>Pabluoff | Métodos e Sensi</title>
 </head>
 
 <body>
@@ -45,6 +45,25 @@
                 <h3>Aprovado por vários influenciadores</h3>
                 <img src="/img/influencers.PNG" alt="Depoimentos" class="testimonials__image">
             </div>
+            <!-- Carrossel de Imagens -->
+            <div class="testimonials__carousel">
+                <div class="carousel__item active">
+                    <img src="/img/image1.jpg" alt="Imagem 1" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="/img/image2.jpg" alt="Imagem 2" class="carousel__image">
+                </div>
+                <div class="carousel__item">
+                    <img src="/img/image3.jpg" alt="Imagem 3" class="carousel__image">
+                </div>
+                <button class="carousel__button prev" onclick="moveCarousel(-1)">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="carousel__button next" onclick="moveCarousel(1)">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+
         </div>
     </section>
 
