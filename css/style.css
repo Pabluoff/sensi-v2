@@ -368,28 +368,28 @@ h3 {
 }
 .testimonials__carousel {
     position: relative;
-    margin-top: 2rem; /* Espaço acima do carrossel */
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Esconde itens fora do viewport */
+    overflow: hidden; 
 }
 
 .carousel__item {
-    display: none; /* Esconde todos os itens por padrão */
+    display: none; 
     justify-content: center;
 }
 
 .carousel__item.active {
-    display: flex; /* Apenas o item ativo será exibido */
+    display: flex;
 }
 
 .carousel__image {
-    width: 100%;
-    max-width: 600px; /* Ajuste conforme necessário */
+    width: 60%;
+    max-width: 600px;
     height: auto;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .carousel__button {
