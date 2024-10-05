@@ -325,6 +325,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-top: -63px;
+    margin-bottom: 38px;
 }
 
 .testimonials__header {
@@ -366,53 +367,6 @@ h3 {
     }
 
 }
-.testimonials__carousel {
-    position: relative;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-}
-
-.carousel__item {
-    display: none; 
-    justify-content: center;
-}
-
-.carousel__item.active {
-    display: flex;
-}
-
-.carousel__image {
-    width: 60%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.carousel__button {
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-.carousel__button.prev {
-    left: 10px; /* Ajuste a posição */
-}
-
-.carousel__button.next {
-    right: 10px; /* Ajuste a posição */
-}
-
 
 /* Price */
 .pricing {
