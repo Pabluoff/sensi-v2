@@ -349,6 +349,26 @@ h3 {
     margin-top: 10px;
 }
 
+/* Linha decorativa acima do subtítulo */
+.benefits-decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.benefits-decor ion-icon {
+    color: #cccccc;
+    font-size: 2.5rem;
+    margin: 0 1rem;
+}
+
+.benefits-decor .decor-line {
+    flex-grow: 1;
+    height: 2px;
+    background: #cccccc;
+}
+
 /* Subtítulo da lista de benefícios */
 .benefits-subtitle {
     font-size: 1.9em;
@@ -357,6 +377,7 @@ h3 {
     margin-bottom: 1rem;
     text-align: left;
     color: #ffffff;
+    font-weight: 500;
 }
 
 /* List-check de benefícios */
@@ -380,6 +401,45 @@ h3 {
     margin-right: 0.5rem;
     color: #1fd6ff; 
     font-size: 2.2em;
+}
+
+/* Estilização do botão */
+.benefits-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.benefits-button-container .btn-primary {
+    --blue: #0099ff;
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    max-width: 29rem;
+    width: 100%;
+    padding: 1rem 0;
+    font-family: inherit;
+    position: relative;
+    border-radius: 72px;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    color: white;
+    border: 2px solid var(--blue);
+    background: linear-gradient(268deg, #01D1FF 0%, #2C8FEB 100%);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    animation: all 0.3s ease;
+    cursor: pointer;
+}
+
+.benefits-button-container .btn-primary:hover {
+    background: linear-gradient(268deg, #01c2ed 0%, #267ccd 100%);
+    -webkit-box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
+    -moz-box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
+    box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
 }
 
 /* Responsividade */
@@ -415,6 +475,14 @@ h3 {
     .benefits-subtitle {
         font-size: 1.6em;
         padding-left: 3.9rem;
+    }
+
+    .benefits-decor ion-icon {
+        font-size: 2rem;
+    }
+
+    .benefits-decor .decor-line {
+        margin: 0 0.5rem;
     }
 }
 
