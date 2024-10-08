@@ -322,6 +322,7 @@ h3 {
     padding: 4rem 0;
     color: #ffffff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: -63px;
@@ -340,15 +341,39 @@ h3 {
     font-size: 3.1em;
     font-weight: bold;
     margin-right: 1rem;
-
 }
 
 .testimonials__image {
-    width: 100px;
+    width: 110px;
     height: auto;
     margin-top: 10px;
 }
 
+/* List-check de benefícios */
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    text-align: left;
+    padding-left: 0;
+}
+
+.benefits-list li {
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    color: #dddddd;
+    
+}
+
+.benefits-list ion-icon {
+    margin-right: 0.5rem;
+    color: #01D1FF; 
+    font-size: 2.2em;
+}
+
+/* Responsividade */
 @media (max-width: 767.98px) {
     .testimonials__header {
         flex-direction: column;
@@ -358,12 +383,20 @@ h3 {
     .testimonials__header h3 {
         margin-right: 0;
         margin-bottom: 1rem;
-        font-size: 2.7em
+        font-size: 2.9em;
     }
 
     .testimonials__image {
-        width: 120px;
+        width: 130px;
         margin-top: 0;
+    }
+
+    .benefits-list li {
+        font-size: 1.4em;
+    }
+
+    .benefits-list {
+        padding-left: 3rem;
     }
 
 }
