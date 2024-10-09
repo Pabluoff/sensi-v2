@@ -357,18 +357,16 @@ h3 {
     margin-bottom: 1rem;
 }
 
-.benefits-decor .circle {
-    width: 10px;
-    height: 10px;
-    background-color: #000000;
-    border-radius: 50%;
+.benefits-decor ion-icon {
+    color: #000000;
+    font-size: 2.5rem;
     margin: 0 1rem;
 }
 
 .benefits-decor .decor-line {
     flex-grow: 1;
     height: 2px;
-    background: #bfbfbf;
+    background: #cccccc;
 }
 
 /* Subtítulo da lista de benefícios */
