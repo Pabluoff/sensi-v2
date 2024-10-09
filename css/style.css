@@ -366,7 +366,7 @@ h3 {
 .benefits-decor .decor-line {
     flex-grow: 1;
     height: 2px;
-    background: #cccccc;
+    background: #9f9f9f;
 }
 
 /* Subtítulo da lista de benefícios */
@@ -403,45 +403,56 @@ h3 {
     font-size: 2.2em;
 }
 
-/* Estilização do botão */
-.benefits-button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-}
-
-.benefits-button-container .btn-primary {
-    --blue: #0099ff;
-    text-align: center;
-    font-size: 15px;
-    display: block;
-    max-width: 29rem;
-    width: 100%;
-    padding: 1rem 0;
-    font-family: inherit;
-    position: relative;
-    border-radius: 72px;
-    overflow: hidden;
-    transition: all 0.3s;
-    line-height: 1.4em;
-    color: white;
-    border: 2px solid var(--blue);
-    background: linear-gradient(268deg, #01D1FF 0%, #2C8FEB 100%);
-    text-transform: uppercase;
+/* From Uiverse.io by neerajbaniwal */ 
+.btn-shine {
+    display: inline-block;
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
     font-weight: 600;
-    letter-spacing: 2px;
+    font-size: 19px;
+    text-decoration: none;
     white-space: nowrap;
-    animation: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    border: none;
     cursor: pointer;
-}
-
-.benefits-button-container .btn-primary:hover {
-    background: linear-gradient(268deg, #01c2ed 0%, #267ccd 100%);
-    -webkit-box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
-    -moz-box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
-    box-shadow: 1px 2px 37px 1px rgb(35, 142, 203);
-}
-
+    position: relative;
+  }
+  
+  @-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  
+  .benefits-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+  }
+  
 /* Responsividade */
 @media (max-width: 767.98px) {
     .testimonials {
