@@ -309,6 +309,41 @@ h3 {
 
 }
 
+.arrow {
+    position: absolute;
+    right: 270px;
+    bottom: 8rem;
+    animation: fade_move_down 1.5s ease-in-out infinite;
+}
+
+@media (max-width: 991.98px) {
+    .arrow {
+        display: none;
+    }
+}
+
+.arrow i {
+    font-size: 2.5rem;
+    color: #00aaff;
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translate(0, -1.5rem);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 1.5rem);
+        opacity: 0;
+    }
+}
+
+
 .lyrics {
     font-family: 'Mystique', Courier, monospace;
 }
@@ -320,7 +355,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -63px;
+    margin-top: -33px;
     margin-bottom: 38px;
 }
 
