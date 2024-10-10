@@ -294,18 +294,13 @@ h3 {
     position: relative;
 }
 
-
-.lobby__content {
-    flex: 1;
-}
-
 .lobby__video-container {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    padding: 0 10px;
+    padding: 0 18px;
 }
 
 
@@ -373,7 +368,7 @@ h3 {
 .benefits-subtitle {
     font-size: 1.9em;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 1rem;
     text-align: left;
     color: #ffffff;
