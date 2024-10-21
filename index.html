@@ -54,26 +54,40 @@
                 <h3>Aprovado por vários <span class="">influenciadores</span></h3>
             </div>
 
-            <div class="lobby__video-container" style="display: block;">
-                <!-- inicio link -->
-                <div id="vid_670742dda61f82000b19f230" style="position:relative;width:100%;padding: 56.25% 0 0;"> <img
-                        id="thumb_670742dda61f82000b19f230"
-                        src="https://images.converteai.net/f8011e90-9917-49ff-a38f-56e46fd6ef43/players/670742dda61f82000b19f230/thumbnail.jpg"
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
-                    <div id="backdrop_670742dda61f82000b19f230"
-                        style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
-                    </div>
+            <div class="lobby__video-container" style="display: block; position: relative;">
+                <!-- início do link do YouTube -->
+                <div style="position:relative;width:100%;padding:56.25% 0 0;">
+                    <iframe 
+                        id="videoPlayer"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:auto;" 
+                        src="https://www.youtube.com/embed/gjDfwAl0yKo?modestbranding=1&controls=0&rel=0&enablejsapi=1&showinfo=0" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <script type="text/javascript"
-                    id="scr_670742dda61f82000b19f230"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/f8011e90-9917-49ff-a38f-56e46fd6ef43/players/670742dda61f82000b19f230/player.js", s.async = !0, document.head.appendChild(s); </script>
-                <style>
-                    .elementor-element:has(#smartplayer) {
-                        width: 100%;
-                    }
-                </style>
-                <!-- fim link -->
+                <!-- Div que será exibida sobre o vídeo -->
+                <div id="overlayPlay" 
+                     style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;font-weight:bold;text-shadow:2px 2px 4px rgba(0, 0, 0, 0.8);border-radius:10px;cursor:pointer;transition: background 0.3s;">
+                    Toque para iniciar
+                </div>
             </div>
-
+            
+            <script>
+                // Função para remover a div e dar play no vídeo
+                document.getElementById('overlayPlay').addEventListener('click', function() {
+                    // Remove a div de overlay
+                    this.style.display = 'none';
+            
+                    // Desativa os eventos de clique no iframe
+                    var iframe = document.getElementById('videoPlayer');
+                    iframe.style.pointerEvents = 'none';
+            
+                    // Acessa o player do YouTube e dá play
+                    iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+                });
+            </script>
+                                    
             <h4 class="benefits-subtitle">Principais benefícios:</h4>
 
             <!-- List-check de benefícios -->
